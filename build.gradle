@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+
+
+        classpath 'com.android.tools.build:gradle:1.2+'
+    }
+}
+
+apply plugin: 'android'
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.ilp.ilpschedule"
+        minSdkVersion 11
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+
+
+    compile project(':library')
+    //compile 'com.android.support:support-v4:22.0.0'
+    compile files('libs/swipemenulistview.jar')
+   // compile fileTree(dir: 'libs', include: ['*.jar'])
+    // compile 'com.google.android.gms:play-services:+'
+    compile files('libs/gcm/gcm-client/dist/gcm.jar')
+   // compile 'com.android.support:support-v4:22.2.1'
+    //compile files('libs/google-play-services.jar')
+
+}

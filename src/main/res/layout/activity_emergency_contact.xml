@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baby_blue"
+    tools:context="${relativePackage}.${activityClass}" >    
+    <include
+        android:id="@+id/main_header"
+        layout="@layout/mainheader_layout" />
+     <LinearLayout
+	    android:id="@+id/main_root1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/offwhite"
+	    android:orientation="horizontal"
+	    android:padding="0dp">
+	
+	    <TextView
+	        android:id="@+id/text_price"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="10dp"
+	        android:ellipsize="end"
+	        android:gravity="center_vertical"
+	        android:singleLine="true"
+	        android:tag="bold"
+	        android:text="Emergency Contact Numbers"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/tex_size_xlarge"
+	        android:textStyle="bold"
+	         />
+	</LinearLayout>
+
+     <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/swipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+     
+</LinearLayout>

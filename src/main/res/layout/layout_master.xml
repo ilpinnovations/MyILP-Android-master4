@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue">
+
+    <!--
+<LinearLayout
+    android:id="@+id/main_root1"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/offwhite"
+    android:orientation="horizontal"
+    android:padding="3dp" 
+     
+      >
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:tag="bold"
+        android:text="@string/txt_menu_news"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tex_size_xlarge"
+        android:textStyle="bold" />
+</LinearLayout>
+-->
+
+    <ListView
+        android:id="@+id/lst_videos"
+        style="@style/CustomListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_root1"
+        android:divider="@color/gray_215"
+        android:dividerHeight="@dimen/divider_size" />
+
+    <!--
+         <com.costum.android.widget.LoadMoreListView
+        android:id="@+id/lst_videos"
+        style="@style/CustomListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/gray_215"
+        android:dividerHeight="@dimen/divider_size" 
+        android:layout_below="@+id/main_root1"
+         android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        />
+    -->
+
+</RelativeLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lst_videos"
+        style="@style/CustomListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent" />
+
+</LinearLayout>
+-->

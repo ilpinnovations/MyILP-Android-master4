@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_blue"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/main_header"
+        layout="@layout/mainheader_layout_sub" />
+    <!--
+      <LinearLayout 
+    android:id="@+id/main_root1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_215"
+    android:orientation="horizontal" 
+    android:padding="3dp">
+    
+     <TextView
+	         android:id="@+id/text_price"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:ellipsize="end"
+	         android:singleLine="true"
+	         android:tag="bold"
+	         android:text="@string/txt_menu_news"
+	         android:textColor="@color/black"
+	         android:textSize="@dimen/tex_size_xlarge"
+	         android:gravity="center"
+	         android:textStyle="bold" 
+	         android:layout_marginLeft="10dp"/>
+    </LinearLayout>-->
+    <!--
+<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        
+</FrameLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/changeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click To Change Date" />
+    </LinearLayout>
+
+    <!--
+        <fragment
+		class="gov.fmard.fmard.NewsActivity"
+		android:id="@+id/tabs_fragment"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />-->
+
+</LinearLayout>

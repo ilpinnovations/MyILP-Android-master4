@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/gradient_blue" 
+     android:id="@+id/root">
+<include
+        android:id="@+id/header"
+        layout="@layout/mainheader_layout_sub" />
+   
+
+
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_blue"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:layout_below="@+id/header" >
+
+<!--      <LinearLayout
+        android:id="@+id/view_layer2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/btn_love"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ui_button_green"
+            android:contentDescription="@string/desc"
+            android:focusable="false"
+            android:src="@drawable/ico_heart" />
+
+        <ImageButton
+            android:id="@+id/btn_like"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ui_button_green"
+            android:contentDescription="@string/desc"
+            android:focusable="false"
+            android:src="@drawable/ico_like" />
+
+        <ImageButton
+            android:id="@+id/btn_reload"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ui_button_green"
+            android:contentDescription="@string/desc"
+            android:focusable="false"
+            android:src="@drawable/ico_reload" />
+    </LinearLayout>
+ -->    
+    
+    
+	<!--  ListRow Left sied Thumbnail image -->
+<LinearLayout
+        android:id="@+id/view_layer1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="0" >
+
+	<LinearLayout
+	    android:id="@+id/thumbnail"
+	    android:layout_width="150px"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="5dip"
+	    android:layout_gravity="center_vertical"
+	    android:orientation="vertical"
+	    android:padding="1dip" >
+<!-- android:background="@drawable/image_bg" -->
+      
+    <ImageView
+        android:id="@+id/image"
+         android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" 
+        android:visibility="visible"/>
+   <!-- android:layout_width="150px"
+        android:layout_height="180px" -->
+	</LinearLayout>
+
+
+ 
+    
+	<!-- Title Of Song-->
+
+	<!-- Artist Name -->
+
+	<!-- Rightend Duration -->
+   <!--  <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+       -->
+     <!-- Rightend Arrow -->    
+     <!-- <ImageView android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/> -->
+
+<LinearLayout
+    android:id="@+id/thumbnail1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="5dip"
+     android:layout_marginTop="0dip"
+    android:orientation="vertical"
+    android:padding="1dip" >
+
+ <!--   <gov.fmard.utils.TextViewEx
+    android:id="@+id/text_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/view_layer2"
+    android:text="Rihanna Love the way lie"
+    android:textColor="#040404"
+    android:textSize="13dip"
+    android:textStyle="bold"
+    android:typeface="sans" /> --> 
+  <TextView
+    android:id="@+id/text_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/view_layer2"
+    android:text=""
+    android:textColor="@color/black"
+    android:textSize="20dp"
+       android:layout_marginTop="20dp"
+    android:typeface="sans"
+    />
+
+<TextView
+    android:id="@+id/text_desc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:text=""
+    android:textColor="@color/gray_35"
+    android:textSize="11dip" 
+    android:maxLines="3"
+    android:layout_gravity="bottom"
+      android:ellipsize="end"
+      android:visibility="visible"/>
+<!-- android:textColor="#343434" -->
+
+
+
+   <!-- <LinearLayout
+	    android:id="@+id/thumbnail2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="0dip"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="7dip"
+	     > 
+
+	     <TextView
+	         android:id="@+id/text_price"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:ellipsize="end"
+	         android:singleLine="true"
+	         android:tag="bold"
+	         android:text="xxxxxx"
+	         android:textColor="@color/gray"
+	         android:textSize="5dp"
+	         android:gravity="right"
+	     
+	       />
+
+</LinearLayout> -->
+
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

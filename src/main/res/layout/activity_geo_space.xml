@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true" >
+        
+        <Button
+		        android:id="@+id/btnDirn"
+		        android:text="Navigate"
+		        android:textColor="@color/black"
+				android:textSize="15sp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttonshape"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="5"
+				android:layout_weight="1" />
+		   <Button
+				android:id="@+id/btnClear"
+				android:text="Clear Map"
+				android:textColor="@color/black"
+				android:textSize="15sp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttonshape"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="5"
+				android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/mapLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+	
+    <ImageButton
+            android:id="@+id/btn_list"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/width"
+            android:background="@color/bright_navy_blue"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ico_list"
+            android:layout_marginTop="0dip"
+            android:layout_marginLeft="0dip" />	   
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        class="com.google.android.gms.maps.MapFragment" />
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+       	android:id="@+id/menuLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:alpha="1" >
+    
+        <LinearLayout 
+            android:id="@+id/slideLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_alignParentTop="true"
+	        android:layout_above="@+id/extraLayout" >
+            <ImageView 
+                android:id="@+id/slideTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/up"
+                android:clickable="true"
+                android:layout_marginTop="3dip"
+                android:layout_marginBottom="3dip" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id = "@+id/extraLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarFadeDuration="2"
+            android:layout_above="@+id/btnLayout" >
+            
+        </LinearLayout>
+    
+        <LinearLayout
+            android:id="@+id/btnLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+            
+		   <Button
+		        android:id="@+id/btnLoc1"
+		        android:textColor="@color/black"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttonshape"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="5"
+				android:layout_weight="1" />
+		   <Button
+		       android:id="@+id/btnLoc2"
+		       android:textColor="@color/black"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttonshape"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="5"
+				android:layout_weight="1" />
+		   <Button
+		      	android:id="@+id/btnLoc3"
+		      	android:textColor="@color/black"
+		      	android:text="Hostel"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttonshape"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="5"
+				android:layout_weight="1" />
+		  </LinearLayout>     
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

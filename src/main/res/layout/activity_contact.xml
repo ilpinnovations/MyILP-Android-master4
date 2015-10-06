@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_blue"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/content_frame_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/main_header"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_above="@+id/master"
+            layout="@layout/mainheader_layout_sub" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/master"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_header"
+        layout="@layout/layout_master" />
+
+    
+ <!--          <include
+        android:id="@+id/detail"
+        layout="@layout/fragmenttab1" /> -->
+
+
+   
+    
+     <!--      <include
+        android:id="@+id/footer"
+        layout="@layout/load_more_footer" />
+
+ -->
+   
+
+</LinearLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/lst_videos"
+        style="@style/CustomListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/gray_215"
+        android:dividerHeight="@dimen/divider_size" />
+
+</RelativeLayout> -->
+
+
